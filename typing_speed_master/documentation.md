@@ -63,3 +63,6 @@ Enter your name: John
 Leaderboard:
 1. John: 45 WPM, 90.00% Accuracy
 ```
+
+### Author:
+Rahul Kumar
