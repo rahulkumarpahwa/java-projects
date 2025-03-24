@@ -1,40 +1,41 @@
-/\*\*
+## Word Counter
 
 - The TypingSpeed class provides a simple typing speed test.
 - It displays a countdown and then shows a random word from a predefined list.
 -
-- <p>This class uses the following features:
-- <ul>
-- <li>Countdown before starting the typing test</li>
-- <li>Random word generation from a predefined list of words</li>
-- <li>Calculation of typing speed in words per minute (WPM)</li>
-- <li>Capturing user input and measuring elapsed time</li>
-- </ul>
+- This class uses the following features:
+- - Countdown before starting the typing test
+- - Random word generation from a predefined list of words
+- - Calculation of typing speed in words per minute (WPM)
+- - Capturing user input and measuring elapsed time
 -
-- <p>Usage example:
-- <pre>
-- {@code
+- Usage example:
+-
+- ```java
+
+  ```
 - TypingSpeed.main(new String[]{});
-- }
-- </pre>
+- ```
+
+  ```
 -
-- <p>Note: This class requires the java.util.concurrent.TimeUnit, java.time.LocalTime, java.util.Random, and java.util.Scanner packages.
+- Note: This class requires the java.util.concurrent.TimeUnit, java.time.LocalTime, java.util.Random, and java.util.Scanner packages.
 -
-- <p>Steps:
-- <ol>
-- <li>Displays a countdown from 3 to 1.</li>
-- <li>Generates and displays 10 random words from a predefined list.</li>
-- <li>Records the start time.</li>
-- <li>Captures the user's input.</li>
-- <li>Records the end time.</li>
-- <li>Calculates the elapsed time in seconds.</li>
-- <li>Calculates the typing speed in words per minute (WPM).</li>
-- <li>Displays the user's input and typing speed.</li>
-- </ol>
+- Steps:
+- 1.  Displays a countdown from 3 to 1.
+- 2.  Generates and displays 10 random words from a predefined list.
+- 3.  Records the start time.
+- 4.  Captures the user's input.
+- 5.  Records the end time.
+- 6.  Calculates the elapsed time in seconds.
+- 7.  Calculates the typing speed in words per minute (WPM).
+- 8.  Displays the user's input and typing speed.
 -
-- <p>Example output:
-- <pre>
-- {@code
+- Example output:
+-
+- ```java
+
+  ```
 - Welcome to Typing Speed Master!
 - 3
 - 2
@@ -42,9 +43,10 @@
 - apple banana cherry date elderberry fig grape honeydew kiwi lemon
 - [User types the words]
 - Your wpm is [calculated WPM]!
-- }
-- </pre>
+- ```
+
+  ```
 -
-- <p>Author: Rahul Kumar
-- <p>Version: 1.0
-  */
+- Author: Rahul Kumar
+- Version: 1.0
+  \*/
