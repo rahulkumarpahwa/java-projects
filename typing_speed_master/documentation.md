@@ -1,0 +1,50 @@
+/\*\*
+
+- The TypingSpeed class provides a simple typing speed test.
+- It displays a countdown and then shows a random word from a predefined list.
+-
+- <p>This class uses the following features:
+- <ul>
+- <li>Countdown before starting the typing test</li>
+- <li>Random word generation from a predefined list of words</li>
+- <li>Calculation of typing speed in words per minute (WPM)</li>
+- <li>Capturing user input and measuring elapsed time</li>
+- </ul>
+-
+- <p>Usage example:
+- <pre>
+- {@code
+- TypingSpeed.main(new String[]{});
+- }
+- </pre>
+-
+- <p>Note: This class requires the java.util.concurrent.TimeUnit, java.time.LocalTime, java.util.Random, and java.util.Scanner packages.
+-
+- <p>Steps:
+- <ol>
+- <li>Displays a countdown from 3 to 1.</li>
+- <li>Generates and displays 10 random words from a predefined list.</li>
+- <li>Records the start time.</li>
+- <li>Captures the user's input.</li>
+- <li>Records the end time.</li>
+- <li>Calculates the elapsed time in seconds.</li>
+- <li>Calculates the typing speed in words per minute (WPM).</li>
+- <li>Displays the user's input and typing speed.</li>
+- </ol>
+-
+- <p>Example output:
+- <pre>
+- {@code
+- Welcome to Typing Speed Master!
+- 3
+- 2
+- 1
+- apple banana cherry date elderberry fig grape honeydew kiwi lemon
+- [User types the words]
+- Your wpm is [calculated WPM]!
+- }
+- </pre>
+-
+- <p>Author: Rahul Kumar
+- <p>Version: 1.0
+  */
