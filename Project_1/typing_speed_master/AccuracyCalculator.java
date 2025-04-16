@@ -1,4 +1,4 @@
-package typing_speed_master;
+package Project_1.typing_speed_master;
 
 public class AccuracyCalculator {
 

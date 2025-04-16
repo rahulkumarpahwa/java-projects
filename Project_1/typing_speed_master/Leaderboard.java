@@ -1,4 +1,4 @@
-package typing_speed_master;
+package Project_1.typing_speed_master;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

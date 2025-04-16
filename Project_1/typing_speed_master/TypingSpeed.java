@@ -1,4 +1,4 @@
-package typing_speed_master;
+package Project_1.typing_speed_master;
 
 import java.util.concurrent.TimeUnit;
 import java.time.LocalTime;
