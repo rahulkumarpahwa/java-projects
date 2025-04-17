@@ -1,4 +1,4 @@
-package CWH.OOPS.Intro.Practice;
+package CWH.OOPS._1_Intro.Practice;
 
 public class P3 {
     public static void main(String[] args) {

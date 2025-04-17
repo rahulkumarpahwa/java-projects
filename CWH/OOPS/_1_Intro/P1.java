@@ -1,4 +1,4 @@
-package CWH.OOPS.Intro;
+package CWH.OOPS._1_Intro;
 
 public class P1 {
     public static void main(String[] args) {
