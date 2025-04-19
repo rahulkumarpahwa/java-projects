@@ -1,0 +1,4 @@
+1. Inheritance follows the principle of DRY (don't repeat yourself)
+2. It has a base class and derived class.
+3. Whether you create or not the derived class constructor, it goona call the base class constructor and firstly the base class constructor will be called.
+4. this is reference variable, which refers to the current instance of the class. 

@@ -1,0 +1,38 @@
+Abstact Class & Abtsract Methods :
+
+1. we can't make objects of the abtsract class or initiated them.
+2. class derived from the abtsract class either need to implement all the abtsract methods or yourself abtsract class.
+3. any class having the one abstract method must becomes the abstract class.
+4. either make a derived class from abstract class and implement all the abtsract methods or make yourseelf abtsract.
+
+5. It is possible to create reference of the abstract class to the object of concrete class. 
+means we can use the abstract class reference which has initiated with the derived class objects in it.
+
+------------------------------------------------------------------------
+
+Interfaces :
+
+1. Meaning (normal) : the point where two systems meet and interact. 
+eg: Buttons on the remote is interface between the user and TV.
+
+2. Interface use implements keyword.
+3. all the methods in Interface are abtsract and we have to implement them all in the implemented class unlike the abstract class which may have some no-abstract methods.
+4. we can't extend the mutiple abstract classes but we can implement mutiple interfaces at a time.
+5. methods implemented from the interface must be defined public. (Cannot reduce the visibility of the inherited method from Bicycle)
+6. Why Interface and Not Abstact Class? Because we can implement mutiple interfaces but from abstract class we can extend only single class.
+And Along with that we can extend the class at same time while implementing mutiple interfaces.
+7. You can define properties/ variable in the inteface and these properties are the 'final' means you can change them.
+and to acess them we generally do it the way we access the static variable / properties such that here we will access them by the Interface name.
+although we can access them with class object as well when no same variable name exist.
+8. We can implement mutiple interfaces and written using ',' between the multiple interfaces.
+
+9. Why mutiple inheritance does not exist in java? Java has a better way to define 
+mutiple inheitance, in short that would be the answer but the main reason behind it is that methods with the same signature exist in both the super classes which creates the problem.
+
+10. when we inlcude a new method in the interface, then we need to update the all the classes which implemented the interface otherwise it program will cause error.
+and This is overhead each time we add a new method to the interface to be added to the class that implements it. so 
+to solve that we have something known as as DEFAULT METHODS.
+these methods are defined in the interface by writing the keyward "default" in front.
+and if we try to implement that in the class then a instance will call the method one in the class and not in the interface, hence we can override the method.
+
+usage : we can add a new method in the interface and we don't need its implementation.
