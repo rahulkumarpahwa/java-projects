@@ -59,10 +59,10 @@ class Library {
     String issueBook(String book) {
         String res = "Not Found";
         for (int i = 0; i < counter; i++) {
-            if (availableBooks[i] == book) {
+            if (availableBooks[i].equals(book)) { // edit: used the equal method instead of ==
                 issuedBooks[issued++] = book;
                 for (int j = i; j < counter; j++) {
-                    availableBooks[i] = availableBooks[i + 1];
+                    availableBooks[j] = availableBooks[j + 1];
                 }
                 counter--;
                 return "Book Issued : " + book;
@@ -75,10 +75,10 @@ class Library {
     void returnBook(String book) {
         if (book != null) {
             for (int i = 0; i < issued; i++) {
-                if (issuedBooks[i] == book) {
+                if (issuedBooks[i].equals(book)) { // edit: used the equal method instead of ==
                     availableBooks[counter++] = book;
                     for (int j = i; j < issued; j++) {
-                        issuedBooks[i] = issuedBooks[i + 1];
+                        issuedBooks[j] = issuedBooks[j + 1];
                     }
                     issued--;
                 }
