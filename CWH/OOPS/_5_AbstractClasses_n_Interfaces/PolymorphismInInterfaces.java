@@ -15,7 +15,7 @@ public class PolymorphismInInterfaces {
         // we can take the camera as the reference and smartphone as the object and this
         // will make the SmartPhone act as the camera.
         Camera c = new SmartPhone(); // similar to dynamic method in dispatch. can only use the methods which are in
-                                     // the Camera interface can be accessed.
+        // the Camera interface can be accessed.
         // this is a smartphone but used it as camera.
         c.Record();
         c.Capture();
