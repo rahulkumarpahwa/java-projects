@@ -1,2 +1,6 @@
 .vscode
 *.class
+!CWH/Package/CWH/Package/UsingPackage.class
+!CWH/Package/CWH/Package/Cloud/GoogleDrive.class
+!CWH/Package/CWH/Package/Cloud/AWS.class
+!CWH/Package/CWH/Package/Cloud/DropBox.class

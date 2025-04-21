@@ -10,10 +10,10 @@ javac -d . *.java
 - `*.java` takes all the files in the current repository and combines them in the folder having `.class` files. The folder name in which all the `.class` files are created is the one mentioned at the top of each `.java` file, as:
 
 ```java
-package CWH.OOPS._6_Packages;
+package CWH.Packages;
 ```
 
-- This will create a folder structure: `CWH > OOPS > _6_Packages > all the .class files`.
+- This will create a folder structure: `CWH > Packages > all the .class files`.
 
 ### Subfolder Creation:
 You can also create subfolders by writing the inner package name with a `.` as:
@@ -31,11 +31,11 @@ package Package.Inner;
 1. Just create the Java file, and then to import, you can write:
 
 ```java
-import CWH.OOPS._6_Packages.Package;
+import CWH.Packages.UsingPackage;
 ```
 or
 ```java
-import CWH.OOPS._6_Packages.*;
+import CWH.Packages.*;
 ```
 
 2. Now, you can use the `Package` class in your code as:
