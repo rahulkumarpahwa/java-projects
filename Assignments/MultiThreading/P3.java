@@ -1,53 +1,32 @@
 package Assignments.MultiThreading;
 
-// Main class
 public class P3 {
     public static void main(String[] args) {
-        // Using Runnable
-        System.out.println("Using Runnable:");
-        for (int i = 1; i <= 3; i++) {
-            Thread thread = new Thread(new RunnableTask(), "Runnable-Thread-" + i);
-            thread.start();
-        }
+        // Create threads with different priorities
+        Thread highPriorityThread = new Thread(new PriorityTask(), "HighPriorityThread");
+        Thread mediumPriorityThread = new Thread(new PriorityTask(), "MediumPriorityThread");
+        Thread lowPriorityThread = new Thread(new PriorityTask(), "LowPriorityThread");
 
-        // Using Thread
-        System.out.println("\nUsing Thread:");
-        for (int i = 1; i <= 3; i++) {
-            ThreadTask threadTask = new ThreadTask("Thread-Task-" + i);
-            threadTask.start();
-        }
+        // Set thread priorities
+        highPriorityThread.setPriority(Thread.MAX_PRIORITY); // Priority 10
+        mediumPriorityThread.setPriority(Thread.NORM_PRIORITY); // Priority 5
+        lowPriorityThread.setPriority(Thread.MIN_PRIORITY); // Priority 1
+
+        // Start threads
+        highPriorityThread.start();
+        mediumPriorityThread.start();
+        lowPriorityThread.start();
     }
 }
 
-// Class implementing Runnable
-class RunnableTask implements Runnable {
+// Task to be executed by threads
+class PriorityTask implements Runnable {
     @Override
     public void run() {
-        System.out.println(Thread.currentThread().getName() + " is running.");
         for (int i = 1; i <= 5; i++) {
             System.out.println(Thread.currentThread().getName() + " - Count: " + i);
             try {
-                Thread.sleep(500); // Simulate work
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-}
-
-// Class extending Thread
-class ThreadTask extends Thread {
-    public ThreadTask(String name) {
-        super(name); // Set thread name
-    }
-
-    @Override
-    public void run() {
-        System.out.println(getName() + " is running.");
-        for (int i = 1; i <= 5; i++) {
-            System.out.println(getName() + " - Count: " + i);
-            try {
-                Thread.sleep(500); // Simulate work
+                Thread.sleep(100); // Simulate some work
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
