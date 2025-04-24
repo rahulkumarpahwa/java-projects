@@ -1,7 +1,6 @@
-package Assignments.Basics.Extra;
-
-import Assignments.Basics.Extra.studentdata.Student;
-import Assignments.Basics.Extra.studentoperations.Result;
+// Ensure the correct package path is used
+import studentdata.Student;
+import studentoperations.Result;
 
 public class StudentManagementSystem {
     public static void main(String[] args) {

@@ -1,5 +1,3 @@
-package Assignments.Basics.Extra;
-
 import java.util.Scanner;
 
 // Custom exception for invalid salary

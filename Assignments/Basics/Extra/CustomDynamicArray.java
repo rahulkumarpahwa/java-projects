@@ -1,5 +1,3 @@
-package Assignments.Basics.Extra;
-
 public class CustomDynamicArray {
     private int[] array;
     private int size;

@@ -1,7 +1,7 @@
-package Assignments.Basics.Extra.studentoperations;
+package studentoperations;
 
 // Ensure the correct package path for Student class
-import Assignments.Basics.Extra.studentdata.Student;
+import studentdata.Student;
 
 public class Result {
     public static String calculateGrade(Student student) {

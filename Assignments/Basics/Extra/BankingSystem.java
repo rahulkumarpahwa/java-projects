@@ -1,5 +1,3 @@
-package Assignments.Basics.Extra;
-
 // Base class
 class BankAccount {
     protected String accountNumber;

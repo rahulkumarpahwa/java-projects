@@ -1,4 +1,4 @@
-package Assignments.Basics.Extra.studentdata;
+package studentdata;
 
 public class Student {
     private String name;
